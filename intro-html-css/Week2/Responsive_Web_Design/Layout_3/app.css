@@ -1,0 +1,30 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    background-color: rgb(99, 86, 77);
+    border: 1px solid black;
+    padding: 0.3em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 7fr 1fr;
+    column-gap: 0.3em;
+    row-gap: 0.3em;
+    height: 100vh;
+    padding: 0.5em;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr 7fr 1fr;
+    }
+    #nav-block {
+        grid-row: 1 / 4;
+    }
+}
