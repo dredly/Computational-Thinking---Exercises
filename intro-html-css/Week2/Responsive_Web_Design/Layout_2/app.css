@@ -1,0 +1,47 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    background-color: rgb(99, 86, 77);
+    border: 1px solid black;
+    margin: 0.3em;
+    padding: 0.3em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header-block {
+    flex: 1 1 10%;
+}
+
+.inner-container {
+    flex: 1 1 80%;
+    display: flex;
+}
+
+#main-block {
+    flex: 3 1 70%;
+}
+
+#footer-block {
+    flex: 1 1 10%;
+}
+
+#sidebar-block {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    #sidebar-block {
+        display: block;
+        flex: 1 1 30%;
+        max-width: 20em;
+    }
+}
