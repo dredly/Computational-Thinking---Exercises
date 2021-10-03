@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Layout 1</title>
+</head>
+
+<body>
+    <div class="flex-container outer-container">
+        <div class="flex-container middle-container">
+            <div class="flex-container inner-container">
+                <div class="block" id="title-block">
+                    <h1>This is my title</h1>
+                </div>
+                <div class="block" id="content-block">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vel eius ducimus. Nemo, nisi
+                        aut animi ducimus quisquam natus nihil, consequuntur, optio nobis quaerat molestiae fuga.
+                        Deleniti, ut consequuntur. Veniam?</p>
+                </div>
+            </div>
+            <picture id="sample-pic">
+                <source srcset="media/sample_img.jpg" media="(min-width: 1100px)">
+                <source srcset="media/sample_img_300.jpg" media="(min-width: 900px)">
+                <source srcset="media/sample_img_200.jpg" media="(min-width: 500px)">
+                <source srcset="media/sample_img_100.jpg">
+                <img src="media/sample_img.jpg" alt="sample image">
+            </picture>
+        </div>
+        <footer class="block" id="footer-block">
+            This is the footer
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
